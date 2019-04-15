@@ -25,4 +25,9 @@ development:
 
 production:
   <<: *default
-  database: resume
+  database: d86412t0ma0828
+  username: fftdjsydzzaggl
+  password: e8784109df6837b420d2b7be9ea876799c840d86786391c602ef8f78fa58e27d
+  port: 5432
+  host: ec2-54-247-70-127.eu-west-1.compute.amazonaws.com
+  
