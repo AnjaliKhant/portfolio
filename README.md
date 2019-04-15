@@ -5,20 +5,12 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Install
 
-* System dependencies
+      ruby 2.4.0
+      Rails 5.2.3
 
-* Configuration
+* Create database 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+if you want to deploy app on heroku then create databse on heroku and write the credentials of databse 
+in database.yml file for production database.
