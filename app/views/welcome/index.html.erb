@@ -324,7 +324,7 @@
       <div class="contact-form">
         <div class="container">
           <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">      
-            <%#= form_for(@welcome, :html =>{:multipart => true}) do |f| %>
+            <%= form_for @welcome ,:url => {:action => :create} do |f| %>
             <div class="col-md-6 col-lg-6 col-sm-12">
               <div class="contact-block">
                 <h2>Contact Form</h2>
@@ -333,6 +333,7 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                        <%#= f.text_field :name, class:"form-control" , id:"name" ,name:"name" , %>
                         <div class="help-block with-errors"></div>
                       </div>                                 
                     </div>
@@ -344,13 +345,13 @@
                     </div>
                      <div class="col-md-12">
                       <div class="form-group">
-                        <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                        <input type="text" placeholder="Subject" id="msg_subject" name="subject" class="form-control" required data-error="Please enter your subject">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
+                        <textarea class="form-control" id="message" placeholder="Your Message" name="message" rows="5" data-error="Write your message" required></textarea>
                         <div class="help-block with-errors"></div>
                       </div>
                       <div class="submit-button">
@@ -363,7 +364,7 @@
                 </form>
               </div>
             </div>
-            <%# end %>
+            <% end %>
             <div class="col-md-6 col-lg-6 col-sm-12">
               <div class="footer-right-area wow fadeIn">
                 <h2>Contact Address</h2>
