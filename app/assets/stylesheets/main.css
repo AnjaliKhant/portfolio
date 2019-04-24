@@ -224,6 +224,10 @@ button:focus {
   background: #D6274D;
 }
 
+.social-icon li .github:hover {
+  background: #73b265;
+}
+
 .social-icon li .linkedin:hover {
   background: #1260A2;
 }

@@ -11,7 +11,7 @@
               <span class="icon-menu"></span>
               <span class="icon-menu"></span>
             </button>
-            <a href="index.html" class="navbar-brand">
+            <a href="#contact" class="navbar-brand">
             <%= image_tag("logo.png") %>
             </a>
           </div>
@@ -37,11 +37,11 @@
                   Resume
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolios">
-                  Work
-                </a>
-              </li>
+              <!--<li class="nav-item">-->
+              <!--  <a class="nav-link" href="#portfolios">-->
+              <!--    Work-->
+              <!--  </a>-->
+              <!--</li>-->
               <li class="nav-item">
                 <a class="nav-link" href="#contact">
                   Contact
@@ -88,18 +88,18 @@
                 <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Full Stack RoR Developer</p>
                 <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
                   <li>
-                    <a class="facebook" href="https://www.facebook.com/anjali.khant.75"><i class="icon-social-facebook"></i></a>
+                    <a class="facebook" href="https://www.facebook.com/anjali.khant.75" target="_blank"><i class="icon-social-facebook"></i></a>
                   </li>
                   <li>
-                    <a class="github" href="https://github.com/anjaliandruby"><i class="icon-social-github"></i></a>
+                    <a class="github" href="https://github.com/anjaliandruby" target="_blank"><i class="icon-social-github"></i></a>
                   </li>
                   <li>
-                    <a class="linkedin" href="https://www.linkedin.com/in/anjalikhant/"><i class="icon-social-linkedin"></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/anjalikhant/" target="_blank"><i class="icon-social-linkedin"></i></a>
                   </li>
                 </ul>
-                <div class="header-button wow fadeInUp" data-wow-delay="1s">
-                  <a href="#" class="btn btn-common">Get a Free Quote</a>
-                </div>
+                <!--<div class="header-button wow fadeInUp" data-wow-delay="1s">-->
+                <!--  <a href="#" class="btn btn-common">Get a Free Quote</a>-->
+                <!--</div>-->
               </div>
             </div>
           </div>
@@ -317,7 +317,7 @@
     <section id="contact" class="section-padding">      
       <div class="contact-form">
         <div class="container">
-          <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">      
+          <div class="contact-form-area wow fadeInUp" data-wow-delay="0.4s">      
             <%= form_for @welcome ,:url => {:action => :create} do |f| %>
             <div class="col-md-6 col-lg-6 col-sm-12">
               <div class="contact-block">
@@ -358,9 +358,9 @@
                 </form>
               </div>
             </div>
-            <% end %>
+            
             <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="footer-right-area wow fadeIn">
+              <div class="contact-block">
                 <h2>Contact Address</h2>
                 <div class="footer-right-contact">
                   <div class="single-contact">
@@ -384,10 +384,39 @@
                 </div>
               </div>
             </div>
+            <% end %>
+            
+            <!--<div class="col-md-12 col-lg-12 col-sm-12">-->
+            <!--  <div class="footer-right-area wow fadeIn">-->
+            <!--    <h2>Contact Address</h2>-->
+            <!--    <div class="footer-right-contact">-->
+            <!--      <div class="single-contact">-->
+            <!--        <div class="contact-icon">-->
+            <!--          <i class="fa fa-map-marker"></i>-->
+            <!--        </div>-->
+            <!--        <p>Tsukuba, Ibaraki, JAPAN</p>-->
+            <!--      </div>-->
+            <!--      <div class="single-contact">-->
+            <!--        <div class="contact-icon">-->
+            <!--          <i class="fa fa-envelope"></i>-->
+            <!--        </div>-->
+            <!--        <p><a href="mailto:hello@tom.com">anjalikhant123@gmail.com</a></p>                    -->
+            <!--      </div>-->
+            <!--      <div class="single-contact">-->
+            <!--        <div class="contact-icon">-->
+            <!--          <i class="fa fa-phone"></i>-->
+            <!--        </div>-->
+            <!--        <p><a href="#">+ (81) 070 2648 6878</a></p>-->
+            <!--      </div>-->
+            <!--    </div>-->
+            <!--  </div>-->
+            <!--</div>-->
             <!-- <div class="col-md-12">
             <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object>
             </div> -->
           </div>
+          
+          
         </div>
       </div>   
     </section>
@@ -401,13 +430,13 @@
             <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
               <ul class="social-icon">
                 <li>
-                  <a class="facebook" href="https://www.facebook.com/anjali.khant.75"><i class="icon-social-facebook"></i></a>
+                  <a class="facebook" href="https://www.facebook.com/anjali.khant.75" target="_blank"><i class="icon-social-facebook"></i></a>
                 </li>
                 <li>
-                  <a class="twitter" href="https://github.com/anjaliandruby"><i class="icon-social-github"></i></a>
+                  <a class="github" href="https://github.com/anjaliandruby" target="_blank"><i class="icon-social-github"></i></a>
                 </li>
                 <li>
-                  <a class="instagram" href="https://www.linkedin.com/in/anjalikhant/"><i class="icon-social-linkedin"></i></a>
+                  <a class="linkedin" href="https://www.linkedin.com/in/anjalikhant/" target="_blank"><i class="icon-social-linkedin"></i></a>
                 </li>
               </ul>
           
