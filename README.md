@@ -14,3 +14,5 @@ Things you may want to cover:
 
 if you want to deploy app on heroku then create databse on heroku and write the credentials of databse 
 in database.yml file for production database.
+
+## For demo click here https://anjalikhant.herokuapp.com/
